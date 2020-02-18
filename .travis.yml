@@ -1,0 +1,33 @@
+language: node_js
+sudo: false
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+before_install:
+  - export TZ='Asia/Shanghai'
+  - npm install -g hexo-cli
+
+install:
+  - npm install
+  - cd themes/suka
+  - npm install
+  - cd ../../
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "${GH_NAME}"
+  - git config user.email "${GH_EMAIL}"
+  - git add .
+  - git commit -m "Travis CI Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REPO}" master:master
