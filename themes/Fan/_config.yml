@@ -5,10 +5,10 @@
 # main menu navigation
 menu:
   Home: /
-  Tags: /tags
-  Categories: /categories
+  #Tags: /tags
+  #Categories: /categories
   Archives: /archives
-  About: /about
+  #About: /about
 
 # Miscelaneous
 favicon: /favicon.ico
