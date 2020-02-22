@@ -16,9 +16,8 @@ before_install:
 
 install:
   - npm install
-  - cd themes/suka
-  - npm install
-  - cd ../../
+  - npm install hexo-renderer-jade
+  - npm install hexo-renderer-stylus
 
 script:
   - hexo g
