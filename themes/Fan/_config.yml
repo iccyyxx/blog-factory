@@ -35,18 +35,18 @@ toc:
 # ---------------
 since: 2017
 
-links:
-  enable: true
-  data:
-    -
-      url: https://github.com/fan-lv
-      text: GitHub
-    -
-      url: mailto:15757856604@163.com
-      text: E-Mail
-    -
-      url: tencent://message/?uin=1019593584&Site=&Menu=yes
-      text: QQ
+# links:
+#   enable: true
+#   data:
+#     -
+#       url: https://github.com/fan-lv
+#       text: GitHub
+#     -
+#       url: mailto:15757856604@163.com
+#       text: E-Mail
+#     -
+#       url: tencent://message/?uin=1019593584&Site=&Menu=yes
+#       text: QQ
 
 
 # busuanzi count for PV / UV in site
