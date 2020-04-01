@@ -65,7 +65,31 @@ class CurrentTime {
     }
 }
 ```
-
+## 使用蒙特卡罗模拟计算Π
+- 蒙特卡罗模拟是以概率统计理论为指导的统计模拟原理
+  ```
+public class ComputePi {
+        //使用蒙特卡罗模拟计算Π
+        /*蒙特卡罗模拟是以概率统计理论为指导的统计模拟原理*/
+        public static void main(String[] args){
+            getPi();
+        }
+        public static void getPi(){
+            //产生随机点,点的个数决定误差大小
+            final int HIT_NUMBER_OF_SQUARE = 10000000;
+            //定义落在圆上的变量
+            int hitNumberOfCircle = 0;
+            for (int i = 0 ; i < HIT_NUMBER_OF_SQUARE ; i++ ){
+                // 坐标为-1到1
+                double x = Math.random() * 2 - 1;
+                double y = Math.random() * 2 - 1;
+                if( x * x + y * y <= 1 ) hitNumberOfCircle++;
+            }
+            double pi = 4.0 * hitNumberOfCircle / HIT_NUMBER_OF_SQUARE;
+            System.out.println("Pi is "+pi);
+        }
+    }
+  ```
 
 
 
