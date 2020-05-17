@@ -161,6 +161,104 @@ public class Calculator {
 > - *C:\Users\80975\IdeaProjects\untitled\src>java ooo.Calculator 5 + 3
 > 5 + 3 = 8*
 
+# 其他
+```
+public class Demo1 {
+    public static void main(String[] args) {
+        String s1 = "I Love You.";
+        String s2 = new String("I Love You.");
+        String s3 = "I Love You.";
+        String s4 = new String("I Love You.");
+//        System.out.println("s1与s3是否相同："+(s1==s3));
+//        System.out.println("s2与s4是否相同："+(s2==s4));
+/*
+s1与s3是否相同：true
+s2与s4是否相同：false
+s1 是不可变字符串
+ */
+//        System.out.println("s1与s2是否相同："+(s1==s2));
+//        System.out.println("s1与s2是否相同："+s1.equals(s2));
+/*
+s1与s2是否相同：false
+s1与s2是否相同：true
+由此可见
+equals是比较两个字符串的值
+==是比较地址
+*/
+//        System.out.println(s1.length());
+        /*
+        11
+        字符个数就是字符串长度。
+         */
+//        System.out.println(s1.charAt(4));
+        /*
+        v
+        取下标为4的字符，从0开始。
+         */
+//        System.out.println(s1.substring(2,6));
+        /*
+        Love
+        取子串，2是起始位置的下标(闭区间)，6是结束位置的下标(开区间)，
+         */
+//        System.out.println(s1.toLowerCase());
+        /*
+        i love you.
+        把字符串转化为小写形式
+         */
+//        System.out.println(s1.toUpperCase());
+        /*
+        I LOVE YOU.
+        把字符串转化为大写形式
+         */
+//        System.out.println("    (i love you.)    ".trim());
+        /*
+         (i love you.)
+         删除两端的空格
+         */
+//        System.out.println("i love you.".replace('o','X'));
+//        System.out.println("i love you.".replace("o","X"));
+//        System.out.println("i love you.".replace("ou","XX"));
+//        System.out.println("i love you.".replaceFirst("o","X"));
+//        System.out.println("i love you.".replaceAll("o","X"));
+        /*
+        i lXve yXu.  把找到的所有都替换
+        i lXve yXu.  同上
+        i love yX.   可以以字符串换字符串
+        i lXve you.  替换找到的第一个
+        i lXve yXu.  字符串可以是特殊的字符串
+         */
+//        System.out.println("I Love You.".indexOf('x'));
+//        System.out.println("I Love You.".indexOf('o'));
+//        System.out.println("I Love You.".indexOf('o',4));
+//        System.out.println("I Love You.".indexOf("Love"));
+//        System.out.println("I Love You.".lastIndexOf('o'));
+//        System.out.println("I Love You.".lastIndexOf('o',0));
+        /*
+        -1  找不到返回-1
+         3  找得到返回第一个的下标
+         8  从下标为4开始查找
+         2  查找字符串，返回字符串首字母的下标
+         8  反向搜索
+         -1 答案永远为-1
+         */
+//        int k="I Love You.txt".lastIndexOf(".");
+//        System.out.println("I Love You.txt".substring(k+1));
+        /*
+        txt     可用于查找文件类型
+         */
+//        String[] list = s1.split(" ");
+//        System.out.println();
+//        for(String result:list){
+//            System.out.println(result);
+//        }
+        /*
+        I
+        Love
+        You.
+         */
+    }
+}
+```
 
 
  
